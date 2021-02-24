@@ -1,0 +1,39 @@
+/* general classes */
+.centered{
+  text-align: center;
+  justify-content: center;
+}
+
+.title{
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Signika', sans-serif;
+}
+
+.subtitle{
+  font-size: 1.5rem;
+  color: grey;
+  font-weight:500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.body{
+  font-size: 1.25rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* First image (Logo. Full height) */
+.splash-img {
+  width:100%;
+  margin-top:7vh;
+  z-index: -1;
+}
+
+/* div after first image */
+.about-div{
+  z-index: 1;
+  background-color: white;
+  width: 70%;
+  padding-top: 2rem;
+  margin: auto;
+}

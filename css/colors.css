@@ -1,0 +1,37 @@
+/* colors */
+.c1-background{
+  background-color: rgb(243, 100, 94); /*pink*/
+}
+
+.c1-text{
+  color: rgb(243, 100, 94); /*pink*/
+}
+
+.c2-background{
+  background-color: rgb(219, 41, 31); /*red*/
+}
+
+.c2-text{
+  color: rgb(219, 41, 31); /*red*/
+}
+
+.c3-background{
+  background-color: rgb(35, 86, 141); /*blue*/
+}
+
+.c3-text{
+  color: rgb(35, 86, 141); /*blue*/
+}
+
+/* colored bars */
+.pink-bar{
+
+}
+
+.red-bar{
+
+}
+
+.blue-bar{
+
+}
