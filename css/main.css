@@ -1,3 +1,21 @@
+/*to remove underline from links*/
+a{
+  text-decoration: none;
+}
+
+/*to remove weird box present after button clicks*/
+*:focus {
+    outline: 0 !important;
+}
+
+/*offset anchor to deal with navbar*/
+.anchor {
+    display: block;
+    position: relative;
+    top: -7vh; /*navbar height*/
+    visibility: hidden;
+}
+
 /* general classes */
 .centered{
   text-align: center;
@@ -13,7 +31,9 @@
 .subtitle{
   font-size: 1.5rem;
   color: grey;
-  font-weight:500;
+  font-weight:600;
+  margin-top:2rem;
+  margin-bottom:1rem;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -31,11 +51,147 @@
   top: 7vh;
 }
 
-/* div after first image */
+/* about section */
+.about-container{
+  width: 100%;
+  background-color:white;
+  padding-bottom: 2rem;
+}
+
 .about-div{
-  z-index: 1;
   background-color: white;
   width: 70%;
   padding-top: 2rem;
   margin: auto;
+}
+
+/*screening section*/
+.screening-container{
+  width: 100%;
+  background: linear-gradient(to bottom right, rgb(243, 100, 94), rgb(219, 41, 31));
+  color: white;
+  padding: 2rem;
+}
+
+.screening-div{
+  margin: auto;
+  width: 100%;
+}
+
+.screening-title{
+  width: 100%;
+  text-align: center;
+}
+
+.screening-blurb-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.screening-blurb{
+  width: 550px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 80px auto;
+  color: white;
+  align-items: center;
+  margin: 20px;
+}
+
+.screening-blurb-icon{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+  font-size: 3rem;
+  margin: 10px;
+}
+
+.screening-blurb-subtitle{
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  margin: 2px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.screening-blurb-body{
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  margin: 2px;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.zoom-out{
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out; /* for Safari & Chrome */
+}
+
+.zoom-out:hover{
+  transform: scale(.95);
+  color: #b8b6b6; /*light grey*/
+}
+
+/* people section */
+.people-container{
+  width: 100%;
+  background-color:white;
+  padding-bottom: 2rem;
+  padding: 2rem;
+}
+
+.people-div{
+  width: 80%;
+  margin: auto;
+}
+
+.people-card-container{
+  width: 100%;
+
+}
+
+.people-card{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.people-img{
+  width: 100px;
+  max-height: 100%;
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 1;
+  margin: 20px;
+}
+
+.people-name{
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  margin: 2px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: 'Signika', sans-serif;
+}
+
+.people-position{
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  margin: 2px;
+  color: rgb(219, 41, 31);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Signika', sans-serif;
+}
+
+.people-description{
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  margin: 2px;
+  font-size: 1.1rem;
+  font-family: 'Signika', sans-serif;
 }

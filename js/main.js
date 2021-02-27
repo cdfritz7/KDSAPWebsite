@@ -3,31 +3,12 @@ function toggleFunction() {
     var x = document.getElementById("navbar-mobile-dropdown");
 
     if (x.style.maxHeight === "0px") {
-      x.style.maxHeight = "150px";
+      x.style.maxHeight = "500px";
     } else {
       x.style.maxHeight = "0px";
     }
 }
 
-function moveScroller() {
-    var $anchor = $("#home");
-    var $scroller = $('#about');
-
-    var move = function() {
-        var st = $(window).scrollTop();
-        var ot = $anchor.offset().top;
-        if(st > ot) {
-            $scroller.css({
-                position: "fixed",
-                top: "0px"
-            });
-        } else {
-            $scroller.css({
-                position: "relative",
-                top: ""
-            });
-        }
-    };
-    $(window).scroll(move);
-    move();
+function open_url(url){
+  window.open(url, '_blank');
 }
