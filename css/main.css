@@ -195,3 +195,21 @@ a{
   font-size: 1.1rem;
   font-family: 'Signika', sans-serif;
 }
+
+.foot{
+  background-color: #23568D;
+}
+
+.footer-text1{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer-text2{
+  text-align: left;
+  margin-left: 30%;
+}
+
+.footer-text3{
+  text-align: right;
+}
