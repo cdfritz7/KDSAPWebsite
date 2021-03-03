@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>Texas KDSAP</title>
+
 <head>
   <link rel="icon" href="./img/favicon.ico">
 
@@ -21,252 +22,298 @@
 <style>
 
 </style>
+
 <body>
 
-<div class="my-navbar">
+  <div class="my-navbar">
 
-  <div class="my-navbar-container">
-    <a class="my-navbar-burger" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars fa-2x"></i>
-    </a>
-    <a href="#home" class="my-navbar-item my-navbar-home ">KDSAP</a>
-    <a href="#about" class="my-navbar-item"><i class="fa fa-book" aria-hidden="true"></i> About </a>
-    <a href="#screenings"class="my-navbar-item"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Screenings </a>
-    <a href="#people" class="my-navbar-item"><i class="fa fa-user" aria-hidden="true"></i> People </a>
-    <a href="#contact" class="my-navbar-item"><i class="fa fa-envelope" aria-hidden="true"></i> Contact </a>
-  </div>
+    <div class="my-navbar-container">
+      <a class="my-navbar-burger" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars fa-2x"></i>
+      </a>
+      <a href="#home" class="my-navbar-item my-navbar-home ">KDSAP</a>
+      <a href="#about" class="my-navbar-item"><i class="fa fa-book" aria-hidden="true"></i> About </a>
+      <a href="#screenings" class="my-navbar-item"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Screenings
+      </a>
+      <a href="#people" class="my-navbar-item"><i class="fa fa-user" aria-hidden="true"></i> People </a>
+      <a href="#contact" class="my-navbar-item"><i class="fa fa-envelope" aria-hidden="true"></i> Contact </a>
+    </div>
 
-  <div id="navbar-mobile-dropdown" style="max-height:0px">
-    <ul class="dropdown">
-      <li class="dropdown-item"><a href="#home">KDSAP</a></li>
-      <li class="dropdown-item"><a href="#about"><i class="fa fa-book" aria-hidden="true"></i> About </a></li>
-      <li class="dropdown-item"><a href="#screenings"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Screenings </a></li>
-      <li class="dropdown-item"><a href="#people" ><i class="fa fa-user" aria-hidden="true"></i> People </a></li>
-      <li class="dropdown-item"><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact </a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="anchor" id="home"></div>
-
-<!-- First Parallax Image with Logo Text -->
-<img class="splash-img" src="./img/logo_words_wide.jpg" alt="KDSAP splash graphic">
-
-<div class="anchor" id="about"></div>
-
-<!-- Container (About Section) -->
-<div class="about-container">
-  <div class="about-div">
-    <h3 class="centered title c3-text">About Us</h3>
-    <p class="centered subtitle">Who We Are</p>
-    <div class="pink-blue-bar"></div>
-    <p class="body">
-      The Kidney Disease Screening and Awareness Program (KDSAP) chapter at The University of Texas at Austin aims to engage, expose, and educate dedicated students and community members to growing healthcare crises, with particular attention to chronic kidney disease. KDSAP strives to develop students' career interests in healthcare by offering students the opportunity to interact with nephrologists and other healthcare providers, build leadership skills, and give back to the community. Through the community outreach branch, KDSAP members will actively participate in a number of volunteer opportunities and further engage with the community by running free kidney disease screenings alongside licensed physicians in medically underserved areas. Texas has a higher chronic kidney disease rate than the national average, and KDSAP at The University of Texas at Austin hopes to help change this unfortunate reality one step, one screening, and one educational event at a time.
-    </p>
-    <p class="centered subtitle">Our History</p>
-    <div class="pink-blue-bar"></div>
-    <p class="body">
-      The Kidney Disease Screening and Awareness Program (KDSAP) was founded by Li-Li Hsiao, MD, PhD, in March 2008 at Harvard College. KDSAP has been growing since, and currently has 15 registered chapters at colleges across the United States. The UT Austin chapter was established in 2019. Since then we have hosted several screenings with local community partners, and hope to continue serving greater populations. Texas KDSAP has developed under the support of our physician advisor Dr. Peter Miller, whose guidance has been instrumental in the expansion of screening efforts as well as career development for student members. We hope to continue growing as an organization in order to serve more people and pursue our mission.
-    </p>
-  </div>
-</div>
-
-<div class="anchor" id="screenings"></div>
-
-<!-- Container (screening section) -->
-<div class="screening-container">
-  <div class="screening-div">
-    <p class="screening-title title">
-      Screening Process
-    </p>
-    <div class="screening-blurb-container">
-      <div class="screening-blurb">
-        <div class="screening-blurb-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
-        <p class="screening-blurb-subtitle">1. Registration</p>
-        <p class="screening-blurb-body">Greeting and anonymous ID assignment. Volunteer records name and date of birth.</p>
-      </div>
-      <div class="screening-blurb">
-        <div class="screening-blurb-icon"><i class="fa fa-file-text-o" aria-hidden="true"> </i></div>
-        <p class="screening-blurb-subtitle">2. Questionnaire</p>
-        <p class="screening-blurb-body">Fill out questionnaire with help from a volunteer.</p>
-      </div>
-      <div class="screening-blurb zoom-out" onclick="open_url('https://www.kidney.org/atoz/content/what-urinalysis')">
-        <div class="screening-blurb-icon"><i class="fa fa-flask" aria-hidden="true"></i></div>
-        <p class="screening-blurb-subtitle">3. Urinalysis</p>
-        <p class="screening-blurb-body">Urine assessment for markers of kidney disease.</p>
-      </div>
-      <div class="screening-blurb zoom-out" onclick="open_url('https://www.kidney.org/atoz/content/obesewyska')">
-        <div class="screening-blurb-icon"><i class="fa fa-user" aria-hidden="true"></i></div>
-        <p class="screening-blurb-subtitle">4. BMI</p>
-        <p class="screening-blurb-body">Volunteer measures height and weight to calculate BMI, which provides general info about health.</p>
-      </div>
-      <div class="screening-blurb zoom-out" onclick="open_url('https://www.kidney.org/kidneydisease/siemens_general_bp')">
-        <div class="screening-blurb-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
-        <p class="screening-blurb-subtitle">5. Blood Pressure</p>
-        <p class="screening-blurb-body">Volunteer uses blood pressure to cuff to check for hypertension, a marker of kidney disease.</p>
-      </div>
-      <div class="screening-blurb zoom-out" onclick="open_url('https://www.kidney.org/atoz/content/AboutDiabetes-AreYouAtRisk')">
-        <div class="screening-blurb-icon"><i class="fa fa-tint" aria-hidden="true"></i></div>
-        <p class="screening-blurb-subtitle">6. Blood Glucose</p>
-        <p class="screening-blurb-body">Volunteer measures blood sugar levels through a finger prick to check for diabetes.</p>
-      </div>
-      <div class="screening-blurb">
-        <div class="screening-blurb-icon"><i class="fa fa-user-md" aria-hidden="true"></i></div>
-        <p class="screening-blurb-subtitle">7. MD Consultation</p>
-        <p class="screening-blurb-body">Physician reviews results and discusses any necessary lifestyle changes.</p>
-      </div>
-      <div class="screening-blurb">
-        <div class="screening-blurb-icon"><i class="fa fa-sign-out" aria-hidden="true"></i></div>
-        <p class="screening-blurb-subtitle">8. Exit Survey</p>
-        <p class="screening-blurb-body">Volunteer collects feedback to improve the KDSAP process.</p>
-      </div>
+    <div id="navbar-mobile-dropdown" style="max-height:0px">
+      <ul class="dropdown">
+        <li class="dropdown-item"><a href="#home">KDSAP</a></li>
+        <li class="dropdown-item"><a href="#about"><i class="fa fa-book" aria-hidden="true"></i> About </a></li>
+        <li class="dropdown-item"><a href="#screenings"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            Screenings </a></li>
+        <li class="dropdown-item"><a href="#people"><i class="fa fa-user" aria-hidden="true"></i> People </a></li>
+        <li class="dropdown-item"><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact </a></li>
+      </ul>
     </div>
   </div>
-</div>
 
-<div class="anchor" id="people"></div>
+  <div class="anchor" id="home"></div>
 
-<!-- People Container -->
-<div class="people-container">
-  <div class="people-div">
-    <h3 class="centered title c3-text">People</h3>
-    <div class="pink-blue-bar"></div>
-    <div class="people-card-container">
-      <div class="people-card">
-        <img class="people-img" src="./img/test.jpg">
-        <p class="people-name">Wilmer Rodriquez</p>
-        <p class="people-position">President</p>
-        <p class="people-description">
-          Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
-          dolor sit amut Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
-          dolor sit amut
-        </p>
-      </div>
-      <div class="people-card">
-        <img class="people-img" src="./img/test.jpg">
-        <p class="people-name">Dani McNeill</p>
-        <p class="people-position">Secretary</p>
-        <p class="people-description">
-          Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
-          dolor sit amut Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
-          dolor sit amut
-        </p>
-      </div>
-      <div class="people-card">
-        <img class="people-img" src="./img/test.jpg">
-        <p class="people-name">Hannah Engebretson</p>
-        <p class="people-position">Director of Community Outreach</p>
-        <p class="people-description">
-          Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
-          dolor sit amut Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
-          dolor sit amut
-        </p>
-      </div>
-      <div class="people-card">
-        <img class="people-img" src="./img/test.jpg">
-        <p class="people-name">Sami Joudeh</p>
-        <p class="people-position">Director of Health Education</p>
-        <p class="people-description">
-          Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
-          dolor sit amut Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
-          dolor sit amut
-        </p>
-      </div>
-      <div class="people-card">
-        <img class="people-img" src="./img/test.jpg">
-        <p class="people-name">Sanjun Han</p>
-        <p class="people-position">Treasurer</p>
-        <p class="people-description">
-          Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
-          dolor sit amut Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
-          dolor sit amut
-        </p>
-      </div>
-      <div class="people-card">
-        <img class="people-img" src="./img/test.jpg">
-        <p class="people-name">Oriana Reyes</p>
-        <p class="people-position">Director of Programming</p>
-        <p class="people-description">
-          Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
-          dolor sit amut Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
-          dolor sit amut
-        </p>
-      </div>
+  <!-- First Parallax Image with Logo Text -->
+  <img class="splash-img" src="./img/logo_words_wide.jpg" alt="KDSAP splash graphic">
+
+  <div class="anchor" id="about"></div>
+
+  <!-- Container (About Section) -->
+  <div class="about-container">
+    <div class="about-div">
+      <h3 class="centered title c3-text">About Us</h3>
+      <p class="centered subtitle">Who We Are</p>
+      <div class="pink-blue-bar"></div>
+      <p class="body">
+        The Kidney Disease Screening and Awareness Program (KDSAP) chapter at The University of Texas at Austin aims to
+        engage, expose, and educate dedicated students and community members to growing healthcare crises, with
+        particular attention to chronic kidney disease. KDSAP strives to develop students' career interests in
+        healthcare by offering students the opportunity to interact with nephrologists and other healthcare providers,
+        build leadership skills, and give back to the community. Through the community outreach branch, KDSAP members
+        will actively participate in a number of volunteer opportunities and further engage with the community by
+        running free kidney disease screenings alongside licensed physicians in medically underserved areas. Texas has a
+        higher chronic kidney disease rate than the national average, and KDSAP at The University of Texas at Austin
+        hopes to help change this unfortunate reality one step, one screening, and one educational event at a time.
+      </p>
+      <p class="centered subtitle">Our History</p>
+      <div class="pink-blue-bar"></div>
+      <p class="body">
+        The Kidney Disease Screening and Awareness Program (KDSAP) was founded by Li-Li Hsiao, MD, PhD, in March 2008 at
+        Harvard College. KDSAP has been growing since, and currently has 15 registered chapters at colleges across the
+        United States. The UT Austin chapter was established in 2019. Since then we have hosted several screenings with
+        local community partners, and hope to continue serving greater populations. Texas KDSAP has developed under the
+        support of our physician advisor Dr. Peter Miller, whose guidance has been instrumental in the expansion of
+        screening efforts as well as career development for student members. We hope to continue growing as an
+        organization in order to serve more people and pursue our mission.
+      </p>
     </div>
   </div>
-</div>
 
-<div class="anchor" id="contact"></div>
+  <div class="anchor" id="screenings"></div>
 
-<!-- Container (Contact Section) -->
-<div class="contact-container">
-<div class="w3-content w3-container w3-padding-64">
-  <p class="w3-center contact-text">
-    <em>
-    We're always looking for new members! Contact us if you have any questions
-    or feedback on what we do!
-    </em>
-  </p>
-
-  <div class="w3-row w3-padding-32 w3-section contact-info-container">
-    <div class="w3-large w3-margin-bottom contact-text">
-      <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Austin, TX <br>
-      <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-      <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: TexasKDSAP@gmail.com<br>
-      <a href="http://www.facebook.com/groups/texaskdsap/"><i class="fa fa-facebook-official fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Facebook</a><br>
-      <a href="https://www.instagram.com/texaskdsap/"><i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Instagram</a><br>
-    </div>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-        <div class="w3-half">
-          <input class="w3-input w3-border contact-input" type="text" placeholder="Name" required name="Name">
+  <!-- Container (screening section) -->
+  <div class="screening-container">
+    <div class="screening-div">
+      <p class="screening-title title">
+        Screening Process
+      </p>
+      <div class="screening-blurb-container">
+        <div class="screening-blurb">
+          <div class="screening-blurb-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+          <p class="screening-blurb-subtitle">1. Registration</p>
+          <p class="screening-blurb-body">Greeting and anonymous ID assignment. Volunteer records name and date of
+            birth.</p>
         </div>
-        <div class="w3-half">
-          <input class="w3-input w3-border contact-input" type="text" placeholder="Email" required name="Email">
+        <div class="screening-blurb">
+          <div class="screening-blurb-icon"><i class="fa fa-file-text-o" aria-hidden="true"> </i></div>
+          <p class="screening-blurb-subtitle">2. Questionnaire</p>
+          <p class="screening-blurb-body">Fill out questionnaire with help from a volunteer.</p>
+        </div>
+        <div class="screening-blurb zoom-out" onclick="open_url('https://www.kidney.org/atoz/content/what-urinalysis')">
+          <div class="screening-blurb-icon"><i class="fa fa-flask" aria-hidden="true"></i></div>
+          <p class="screening-blurb-subtitle">3. Urinalysis</p>
+          <p class="screening-blurb-body">Urine assessment for markers of kidney disease.</p>
+        </div>
+        <div class="screening-blurb zoom-out" onclick="open_url('https://www.kidney.org/atoz/content/obesewyska')">
+          <div class="screening-blurb-icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+          <p class="screening-blurb-subtitle">4. BMI</p>
+          <p class="screening-blurb-body">Volunteer measures height and weight to calculate BMI, which provides general
+            info about health.</p>
+        </div>
+        <div class="screening-blurb zoom-out"
+          onclick="open_url('https://www.kidney.org/kidneydisease/siemens_general_bp')">
+          <div class="screening-blurb-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+          <p class="screening-blurb-subtitle">5. Blood Pressure</p>
+          <p class="screening-blurb-body">Volunteer uses blood pressure to cuff to check for hypertension, a marker of
+            kidney disease.</p>
+        </div>
+        <div class="screening-blurb zoom-out"
+          onclick="open_url('https://www.kidney.org/atoz/content/AboutDiabetes-AreYouAtRisk')">
+          <div class="screening-blurb-icon"><i class="fa fa-tint" aria-hidden="true"></i></div>
+          <p class="screening-blurb-subtitle">6. Blood Glucose</p>
+          <p class="screening-blurb-body">Volunteer measures blood sugar levels through a finger prick to check for
+            diabetes.</p>
+        </div>
+        <div class="screening-blurb">
+          <div class="screening-blurb-icon"><i class="fa fa-user-md" aria-hidden="true"></i></div>
+          <p class="screening-blurb-subtitle">7. MD Consultation</p>
+          <p class="screening-blurb-body">Physician reviews results and discusses any necessary lifestyle changes.</p>
+        </div>
+        <div class="screening-blurb">
+          <div class="screening-blurb-icon"><i class="fa fa-sign-out" aria-hidden="true"></i></div>
+          <p class="screening-blurb-subtitle">8. Exit Survey</p>
+          <p class="screening-blurb-body">Volunteer collects feedback to improve the KDSAP process.</p>
         </div>
       </div>
-      <input class="w3-input w3-border contact-input" type="text" placeholder="Message" required name="Message">
-      <button class="w3-button w3-black w3-left w3-section contact-button" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
-  </div>
-</div>
-  
-</div>
-
-<!-- Footer -->
-<footer class="foot w3-center w3-padding-32 w3-opacit">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-
-  <div class="w3-container w3-padding-32">
-
-  <div class="w3-third w3-text-white">
-    <div class="footer-text2">
-    <div class="footer-text1 c1-text">Texas KDSAP</div>University of Texas at Austin
     </div>
   </div>
 
-  <div class="w3-third">
-      <div class="c1-text footer-text1 ">Social</div>
-      <div class="w3-large w3-text-white">
-      <a href="http://www.facebook.com/groups/texaskdsap/"><i class="fa fa-facebook-official w3-hover-opacity c1-text"></i> Facebook</a>
-      <a href="https://www.instagram.com/texaskdsap/"><i class="fa fa-instagram w3-hover-opacity c1-text"></i> Instagram</a>
+  <div class="anchor" id="people"></div>
+
+  <!-- People Container -->
+  <div class="people-container">
+    <div class="people-div">
+      <h3 class="centered title c3-text">People</h3>
+      <div class="pink-blue-bar"></div>
+      <div class="people-card-container">
+        <div class="people-card">
+          <img class="people-img" src="./img/test.jpg">
+          <p class="people-name">Wilmer Rodriquez</p>
+          <p class="people-position">President</p>
+          <p class="people-description">
+            Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
+            dolor sit amut Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
+            dolor sit amut
+          </p>
+        </div>
+        <div class="people-card">
+          <img class="people-img" src="./img/test.jpg">
+          <p class="people-name">Dani McNeill</p>
+          <p class="people-position">Secretary</p>
+          <p class="people-description">
+            Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
+            dolor sit amut Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
+            dolor sit amut
+          </p>
+        </div>
+        <div class="people-card">
+          <img class="people-img" src="./img/test.jpg">
+          <p class="people-name">Hannah Engebretson</p>
+          <p class="people-position">Director of Community Outreach</p>
+          <p class="people-description">
+            Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
+            dolor sit amut Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
+            dolor sit amut
+          </p>
+        </div>
+        <div class="people-card">
+          <img class="people-img" src="./img/test.jpg">
+          <p class="people-name">Sami Joudeh</p>
+          <p class="people-position">Director of Health Education</p>
+          <p class="people-description">
+            Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
+            dolor sit amut Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
+            dolor sit amut
+          </p>
+        </div>
+        <div class="people-card">
+          <img class="people-img" src="./img/test.jpg">
+          <p class="people-name">Sanjun Han</p>
+          <p class="people-position">Treasurer</p>
+          <p class="people-description">
+            Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
+            dolor sit amut Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
+            dolor sit amut
+          </p>
+        </div>
+        <div class="people-card">
+          <img class="people-img" src="./img/test.jpg">
+          <p class="people-name">Oriana Reyes</p>
+          <p class="people-position">Director of Programming</p>
+          <p class="people-description">
+            Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
+            dolor sit amut Lorem ipsum dolor sit amut lorem ipsum dolor sit amut lorem ipsum
+            dolor sit amut
+          </p>
+        </div>
       </div>
-      <!-- Socials were not using
+    </div>
+  </div>
+
+  <div class="anchor" id="contact"></div>
+
+  <!-- Container (Contact Section) -->
+  <div class="contact-container contact-text">
+    <div class="w3-content w3-container">
+      <p class="screening-title title">
+        Contact Us
+      </p>
+      <p class="w3-center contact-text contact-subtitle">
+        <em>
+          Contact us if you have any questions or feedback on what we do!
+        </em><br>
+        <em>
+          We're always looking for new members!
+        </em>
+      </p>
+
+      <div class="w3-row w3-padding-32 w3-section contact-info-container">
+        <div class="contact-input-container">
+          <form action="/action_page.php" target="_blank" id="contact">
+
+            <input class="w3-input w3-border contact-input" type="text" placeholder="Name" required name="Name">
+            <input class="w3-input w3-border contact-input" type="text" placeholder="Email" required name="Email">
+            <textarea form="contact" class="w3-input w3-border contact-input contact-message" type="text"
+              placeholder="Message" required name="Message"></textarea>
+
+            <button class="contact-button" type="submit">
+              <i class="fa fa-paper-plane contact-icon"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
+        <div class="w3-large w3-margin-bottom">
+          <div class="contact-item">
+            <i class="fa fa-map-marker fa-fw  w3-xlarge "></i> Austin, TX
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-envelope fa-fw  w3-xlarge "></i> Email: TexasKDSAP@gmail.com
+          </div>
+          <div class="contact-item">
+            <a class="w3-hover-text-black " href="http://www.facebook.com/groups/texaskdsap/" target="_blank">
+              <i class="fa fa-facebook-official fa-fw w3-hover-text-black w3-xlarge "></i>
+              Facebook</a>
+          </div>
+          <div class="contact-item">
+            <a class="w3-hover-text-black " href="https://www.instagram.com/texaskdsap/" target="_blank">
+              <i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge "></i>
+              Instagram</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="foot w3-center w3-padding-32 w3-opacit">
+    <div class="top-button">
+      <a href="#home" class="top-button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    </div>
+
+
+    <div class="w3-container w3-padding-32">
+
+      <div class="w3-third w3-text-white">
+        <div class="footer-text2">
+          <div class="footer-text1 c1-text">Texas KDSAP</div>University of Texas at Austin
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="c1-text footer-text1 ">Social</div>
+        <div class="w3-large w3-text-white">
+          <a href="http://www.facebook.com/groups/texaskdsap/"><i
+              class="fa fa-facebook-official w3-hover-opacity c1-text"></i> Facebook</a>
+          <a href="https://www.instagram.com/texaskdsap/"><i class="fa fa-instagram w3-hover-opacity c1-text"></i>
+            Instagram</a>
+        </div>
+        <!-- Socials were not using
       <i class="fa fa-snapchat w3-hover-opacity"></i>
       <i class="fa fa-pinterest-p w3-hover-opacity"></i>
       <i class="fa fa-twitter w3-hover-opacity"></i>
       <i class="fa fa-linkedin w3-hover-opacity"></i> -->
-  </div>
+      </div>
 
-  <div class="w3-third w3-text-white">
-    Website created by <a href="https://vidare.org/" class="w3-hover-opacity c1-text">Vidare</a>,<br> a 501(c)(3) nonprofit
-  </div>
+      <div class="w3-third w3-text-white">
+        Website created by <a href="https://vidare.org/" class="w3-hover-opacity c1-text">Vidare</a>,<br> a 501(c)(3)
+        nonprofit
+      </div>
 
-  </div>
+    </div>
 
-</footer>
+  </footer>
 
 </body>
+
 </html>
