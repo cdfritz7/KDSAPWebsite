@@ -230,7 +230,7 @@ a{
 .contact-button{
   font-family: 'Roboto', sans-serif;
   color:white;
-  background: #23568D;
+  background: #23568D; /*dark blue*/
   border-style: solid;
   border: 0px;
   border-radius: 3px;
@@ -258,6 +258,7 @@ a{
 .foot{
   background-color: #23568D;
 }
+
 .top-button{
   margin:auto;
   width:fit-content;
@@ -277,13 +278,41 @@ a{
   -webkit-transform:scale(.95);
 }
 
-.footer-text1{
+.footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.footer-text{
   font-size: 20px;
   font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
 }
 
-.footer-text2{
-  text-align: left;
-  margin-left: 30%;
+.footer-text a{
+  transition: .2s ease;
+  -webkit-transition: .2 ease;
 }
 
+.footer-text a:hover{
+  color: rgb(243, 100, 94) !important; /*red*/
+}
+
+/*media queries*/
+@media screen and (max-width:600px){
+  .people-img{
+    display: none !important;
+  }
+
+  .contact-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .contact-button{
+  }
+}

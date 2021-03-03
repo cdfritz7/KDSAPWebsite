@@ -230,7 +230,7 @@
       </p>
       <p class="w3-center contact-text contact-subtitle">
         <em>
-          Contact us if you have any questions or feedback on what we do!
+          Contact us if you have any questions or feedback!
         </em><br>
         <em>
           We're always looking for new members!
@@ -239,33 +239,35 @@
 
       <div class="w3-row w3-padding-32 w3-section contact-info-container">
         <div class="contact-input-container">
-          <form action="/action_page.php" target="_blank" id="contact">
+          <form action="https://formsubmit.co/cdfritz7@gmail.com" method="POST" target="_blank" id="contact">
 
             <input class="w3-input w3-border contact-input" type="text" placeholder="Name" required name="Name">
             <input class="w3-input w3-border contact-input" type="text" placeholder="Email" required name="Email">
-            <textarea form="contact" class="w3-input w3-border contact-input contact-message" type="text"
+            <textarea class="w3-input w3-border contact-input contact-message" type="text"
               placeholder="Message" required name="Message"></textarea>
 
-            <button class="contact-button" type="submit">
-              <i class="fa fa-paper-plane contact-icon"></i> SEND MESSAGE
-            </button>
+            <div class="contact-div">
+              <button class="contact-button" type="submit">
+                <i class="fa fa-paper-plane contact-icon"></i> SEND MESSAGE
+              </button>
+            </div>
           </form>
         </div>
         <div class="w3-large w3-margin-bottom">
           <div class="contact-item">
-            <i class="fa fa-map-marker fa-fw  w3-xlarge "></i> Austin, TX
+            <i class="fa fa-map-marker fa-fw fa-lg" aria-hidden="true"></i> Austin, TX
           </div>
           <div class="contact-item">
-            <i class="fa fa-envelope fa-fw  w3-xlarge "></i> Email: TexasKDSAP@gmail.com
+            <i class="fa fa-envelope fa-fw fa-lg" aria-hidden="true"></i> TexasKDSAP@gmail.com
           </div>
           <div class="contact-item">
             <a class="w3-hover-text-black " href="http://www.facebook.com/groups/texaskdsap/" target="_blank">
-              <i class="fa fa-facebook-official fa-fw w3-hover-text-black w3-xlarge "></i>
+              <i class="fa fa-facebook-official fa-fw w3-hover-text-black fa-lg" aria-hidden="true"></i>
               Facebook</a>
           </div>
           <div class="contact-item">
             <a class="w3-hover-text-black " href="https://www.instagram.com/texaskdsap/" target="_blank">
-              <i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge "></i>
+              <i class="fa fa-instagram fa-fw w3-hover-text-black fa-lg" aria-hidden="true"></i>
               Instagram</a>
           </div>
         </div>
@@ -282,36 +284,26 @@
     </div>
 
 
-    <div class="w3-container w3-padding-32">
-
-      <div class="w3-third w3-text-white">
-        <div class="footer-text2">
-          <div class="footer-text1 c1-text">Texas KDSAP</div>University of Texas at Austin
-        </div>
+    <div class="footer-container">
+      <div class="footer-text">
+        <div class="c1-text">Texas KDSAP</div>University of Texas at Austin
       </div>
 
-      <div class="w3-third">
-        <div class="c1-text footer-text1 ">Social</div>
-        <div class="w3-large w3-text-white">
-          <a href="http://www.facebook.com/groups/texaskdsap/"><i
-              class="fa fa-facebook-official w3-hover-opacity c1-text"></i> Facebook</a>
-          <a href="https://www.instagram.com/texaskdsap/"><i class="fa fa-instagram w3-hover-opacity c1-text"></i>
-            Instagram</a>
+      <div class="footer-text">
+        <div class="c1-text ">
+          Social
         </div>
-        <!-- Socials were not using
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+        <a href="http://www.facebook.com/groups/texaskdsap/" target="_blank"><i
+            class="fa fa-facebook-official w3-hover-opacity c1-text"></i> Facebook</a>
+        <a href="https://www.instagram.com/texaskdsap/" target="_blank"><i class="fa fa-instagram w3-hover-opacity c1-text"></i>
+          Instagram</a>
       </div>
 
-      <div class="w3-third w3-text-white">
+      <div class="footer-text">
         Website created by <a href="https://vidare.org/" class="w3-hover-opacity c1-text">Vidare</a>,<br> a 501(c)(3)
         nonprofit
       </div>
-
     </div>
-
   </footer>
 
 </body>
