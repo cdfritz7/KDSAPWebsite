@@ -42,6 +42,25 @@ a{
   font-family: 'Roboto', sans-serif;
 }
 
+.body ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.body li{
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+.body li::before{
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgb(243, 100, 94); /*pink*/
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
 /* First image (Logo. Full height) */
 .splash-img {
   width:100%;
@@ -149,7 +168,6 @@ a{
 
 .people-card-container{
   width: 100%;
-
 }
 
 .people-card{
@@ -195,6 +213,7 @@ a{
   font-size: 1.1rem;
   font-family: 'Signika', sans-serif;
 }
+
 /* contact section */
 .contact-container{
   width: 100%;
@@ -206,9 +225,11 @@ a{
 .contact-text{
   color:white;
 }
+
 .contact-subtitle{
   font-size: 1.25rem;
 }
+
 .contact-info-container{
   display:flex;
   flex-wrap: wrap;
@@ -219,14 +240,17 @@ a{
   border-radius: 3px;
   margin: 4px;
 }
+
 .contact-input-container{
   width: 500px;
   margin: 0px 15px 15px 15px;
 }
+
 .contact-item{
   margin-bottom: 15px;
   margin-left: 5px;
 }
+
 .contact-button{
   font-family: 'Roboto', sans-serif;
   color:white;
@@ -239,6 +263,7 @@ a{
   -webkit-transition: .2s ease;
   margin: 4px;
 }
+
 .contact-button:hover{
   transform:scale(.95);
   -webkit-transform:scale(.95);
@@ -253,6 +278,27 @@ a{
   padding:5px 5px 5px 0px;
 }
 
+/* join section */
+.join-container{
+  width: 100%;
+  background-color:white;
+  padding-bottom: 2rem;
+  padding: 2rem;
+}
+
+.join-div{
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.past-events-container{
+  margin-top: 20px;
+}
+
+.carousel-button{
+  padding: 15px;
+}
 
 /* footer section */
 .foot{
@@ -261,7 +307,7 @@ a{
 
 .top-button{
   margin:auto;
-  width:fit-content;
+  width:150px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   cursor:pointer;
