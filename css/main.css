@@ -54,11 +54,13 @@ a{
 
 .body li::before{
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: rgb(243, 100, 94); /*pink*/
+  color: #e88c49; /*light orange*/
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
+  height: 1em;
   margin-left: -1em; /* Also needed for space (tweak if needed) */
+  font-size: 24px;
 }
 
 /* First image (Logo. Full height) */
@@ -87,7 +89,6 @@ a{
 /*screening section*/
 .screening-container{
   width: 100%;
-  background: linear-gradient(to bottom right, rgb(243, 100, 94), rgb(219, 41, 31));
   color: white;
   padding: 2rem;
 }
@@ -150,7 +151,7 @@ a{
 
 .zoom-out:hover{
   transform: scale(.95);
-  color: #b8b6b6; /*light grey*/
+  color: #e88c49; /*light orange*/
 }
 
 /* people section */
@@ -172,19 +173,19 @@ a{
 
 .people-card{
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 30px 30px auto;
   grid-template-columns: auto auto;
-  align-items: center;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
 .people-img{
-  width: 100px;
+  width: 150px;
   max-height: 100%;
   grid-row: 1 / span 3;
   grid-column: 1 / span 1;
-  margin: 20px;
+  margin-right: 20px;
+  align-self: center;
 }
 
 .people-name{
@@ -200,7 +201,6 @@ a{
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
   margin: 2px;
-  color: rgb(219, 41, 31);
   font-size: 1rem;
   font-weight: 600;
   font-family: 'Signika', sans-serif;
@@ -217,7 +217,6 @@ a{
 /* contact section */
 .contact-container{
   width: 100%;
-  background:linear-gradient(to bottom right, rgb(243, 100, 94),rgb(219, 41, 31));
   padding:2rem;
   padding-bottom: 1rem;
 }
@@ -254,7 +253,6 @@ a{
 .contact-button{
   font-family: 'Roboto', sans-serif;
   color:white;
-  background: #23568D; /*dark blue*/
   border-style: solid;
   border: 0px;
   border-radius: 3px;
@@ -281,12 +279,25 @@ a{
 /* join section */
 .join-container{
   width: 100%;
-  background-color:white;
-  padding-bottom: 2rem;
-  padding: 2rem;
+  color: white;
+  padding: 4rem;
 }
 
 .join-div{
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+}
+
+/*events section*/
+.events-container{
+  background-color: white;
+  width: 100%;
+  padding: 2rem;
+}
+
+.events-div{
+  margin: 20px;
   width: 80%;
   max-width: 700px;
   margin: auto;
@@ -313,13 +324,14 @@ a{
   cursor:pointer;
   border:0px;
   border-radius: 3px;
-  background-color: white;
+  color: white;
   padding:10px;
   transition: .2s ease;
   -webkit-transition: .2s ease;
 }
 
 .top-button:hover{
+  color: white;
   transform:scale(.95);
   -webkit-transform:scale(.95);
 }

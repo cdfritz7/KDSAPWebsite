@@ -1,18 +1,18 @@
 /* colors */
 .c1-background{
-  background-color: rgb(243, 100, 94); /*pink*/
+  background-color: #e88c49; /*light orange*/
 }
 
 .c1-text{
-  color: rgb(243, 100, 94); /*pink*/
+  color: #e88c49; /*light orange*/
 }
 
 .c2-background{
-  background-color: rgb(219, 41, 31); /*red*/
+  background-color: #c45d12; /*dark orange*/
 }
 
 .c2-text{
-  color: rgb(219, 41, 31); /*red*/
+  color: #c45d12; /*dark orange*/
 }
 
 .c3-background{
@@ -24,36 +24,13 @@
 }
 
 /* colored bars */
-.pink-blue-bar{
+.two-color-bar{
   width:200px;
   height:4px;
-  background: linear-gradient(to right, rgb(243, 100, 94) 50%, rgb(35, 86, 141) 50% 100%);
+  background: linear-gradient(to right, #e88c49 50%, rgb(35, 86, 141) 50% 100%);
   margin: auto;
 }
 
-.pink-bar{
-  width:300px;
-  height:5px;
-  background: rgb(243, 100, 94); /*pink*/
-  margin:auto;
-  margin-top:15px;
-  margin-bottom:15px;
-}
-
-.red-bar{
-  width:300px;
-  height:5px;
-  background: rgb(219, 41, 31); /*red*/
-  margin:auto;
-  margin-top:15px;
-  margin-bottom:15px;
-}
-
-.blue-bar{
-  width:300px;
-  height:5px;
-  background: rgb(35, 86, 141); /*blue*/
-  margin:auto;
-  margin-top:15px;
-  margin-bottom:15px;
+.gradient-background{
+  background:linear-gradient(to bottom right, #478ad1, rgb(35, 86, 141) 50% 100%);
 }

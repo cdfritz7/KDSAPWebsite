@@ -31,7 +31,7 @@
 }
 
 .my-navbar-item:hover {
-  color: rgb(243, 100, 94) !important; /*pink*/
+  color: #e88c49 !important; /*light orange*/
 }
 
 .my-navbar-item:active{
